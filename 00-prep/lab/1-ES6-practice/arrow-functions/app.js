@@ -181,8 +181,6 @@ Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
-Student.prototype.greeting = () => `Hi, my name is ${joe.name}`;
-
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
 console.log(joe.greeting());
@@ -217,7 +215,7 @@ console.log(joe.scopeArrow());
 // It is referring to the  Student object.
 // 
 // 2. What is "this" when joe.scopeArrow() is invoked?
-// It is referring to the Student object.
+// It is referring to the global window object.
 //
 // 3. Explain why "this" is different when an arrow function is used.
 // The arrow function 'this' has a shorter syntax than a function expression and does not have its own this.  The arrow functions don't bind with 'this'.  The context of the 'this' bubbles up to the global window object, which is the next nearest enclosing scope.
