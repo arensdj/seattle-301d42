@@ -1,0 +1,21 @@
+nav ul {
+  float: right;
+}
+
+nav li {
+  float: left;
+  padding-right: 2px;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  height: 13px;
+  background-image: url('img/hr-img.gif');
+}
+
+section hr {
+  border-bottom: 1px solid #eee;
+  height: 0;
+}
+
